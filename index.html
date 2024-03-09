@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculating</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header class=" w-9/12 mx-auto ">
+    <h1 class="text-center text-4xl mt-8">Discount  <span class="text-red-500 font-semibold">Calculation</span>!!!</h1>
+    </header>
+
+    <main class="w-9/12 mx-auto">
+        <section class="grid grid-cols-2 w-4/4 gap-4 mx-auto  text-white">
+            <div class="mt-8 p-8 bg-violet-400 rounded-lg">
+                <h2 class="text-2xl">Detaiils</h2>
+                <h3 class="font-semibold text-red-500">Price: <span id="fixed-price">1000</span>TK of 30%</h3>
+                <h2 class="text-2xl">Discount price: <span id="discount-total">00</span>Tk</h2>
+                <button id="btn-apply" class="py-2 px-6 bg-rose-400 mt-4 rounded-lg hover:bg-sky-700 font-medium">Apply</button>
+            </div>
+
+
+            <div class="mt-8 p-8 bg-orange-400 rounded-lg">
+                <h2 class="text-2xl">Detaiils</h2>
+                <h3>Price: <span id="fixed-price-for-Token">1000</span>TK</h3>
+                <h2 class="text-2xl">Discount price: <span id="discount-total-Token" >00</span>Tk</h2>
+                <input id="input-token" class="text-black block" type="text" placeholder="Enter your Token code">
+                <button id="btn-apply-code" class="py-2 px-6 bg-sky-400 mt-4 rounded-lg hover:bg-sky-700 font-medium">Apply</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/discount.js"></script>
+    <script src="./js/discountWithToken.js"></script>
+</body>
+</html>
